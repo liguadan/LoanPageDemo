@@ -1,0 +1,301 @@
+/**
+* CSS样式初始化
+*/
+@charset "utf-8";
+
+html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // font-size: 14px;
+    font-family: "微软雅黑","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    vertical-align: baseline;
+    user-select: text;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+caption {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  outline: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+.van-field__control::-webkit-input-placeholder {
+   font-size: 0.46rem;
+  line-height: 0.5rem;
+   color: #9B9B9B;
+ }
+.van-field__control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 0.46rem;
+  line-height: 0.5rem;
+  color: #9B9B9B;
+}
+.van-field__control::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 0.46rem;
+  line-height: 0.5rem;
+  color: #9B9B9B;
+}
+.van-field__control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 0.46rem;
+  line-height: 0.5rem;
+  color: #9B9B9B;
+}
+
+.next-button {
+  width: 80% ;
+  height: 1.15rem;
+  line-height: 1.15rem;
+  font-size: 0.46rem;
+  border-radius: 6px ;
+  box-sizing: border-box ;
+  margin-left: 10% ;
+  margin-right: 10% ;
+  margin-top: 1.15rem ;
+  color: #fff ;
+  background: #369FFF;
+}
+.next-button:active{
+  background:#94C9FC;
+}
+.van-toast--text {
+  padding: 0.35rem !important;
+  min-width: 5.76rem;
+}
+.van-toast {
+  font-size: 0.35rem !important;
+  background-color: rgba(0,0,0,.5) !important;
+}
+.data-load-fail{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  //background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .fail_img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 3.74rem;
+  }
+  .fail_msg{
+    font-size: 0.4rem;
+    color: #363636;
+    margin-top: 0.46rem;
+  }
+  .fail_reload_button{
+    width:5.76rem;
+    height:1.15rem;
+    background:rgba(54,159,255,1);
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    font-size: 0.46rem;
+    color: #fff;
+  }
+}
+.van-modal{
+  background-color:rgba(0,0,0,0) !important;
+}
+.van_dialog{
+  height: 3.8rem;
+  width:7rem !important;
+  text-align:center;
+  -webkit-box-shadow: 0 0 15px 5px #c1c1c1;
+  -moz-box-shadow: 0 0 15px 5px #c1c1c1;
+  box-shadow: 0 0 15px 5px #c1c1c1;
+  .content{
+    margin-top:0.8rem;
+    line-height:0.56rem;
+    height: 0.56rem;
+    color: #000000;
+    font-size: 0.46rem;
+    .image{
+      width:0.56rem;
+      height: 0.56rem;
+      line-height:0.56rem;
+      vertical-align:middle;
+    }
+  }
+  .confirm{
+    margin:0.8rem 0 0.86rem;
+    color:#fff;
+    background:#369FFF;
+    height:1.15rem;
+    line-height:1.15rem;
+    width:5rem; font-size: 0.46rem;
+    font-weight: 500
+  }
+  .van-swipe{
+    height: 4.6rem !important;
+  }
+}
+.van-pull-refresh__track {
+  height: 100% !important;
+}
+.van-pull-refresh {
+  overflow: auto !important;
+}
+.van-switch__node{
+  height: 24px !important;
+  width: 24px !important;
+}
